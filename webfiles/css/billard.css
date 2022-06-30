@@ -1,0 +1,485 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/webfiles/font/Montserrat-Regular.woff") format("woff2"), url("/webfiles/font/Montserrat-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("/webfiles/font/Lato-Regular.woff") format("woff2"), url("/webfiles/font/Lato-Regular.woff") format("woff");
+}
+* {
+  margin: 0 auto;
+  font-family: "Lato";
+  font-size: 20px;
+  text-decoration-line: none;
+}
+* h2 {
+  color: #6B5B54;
+  font-size: 1.8rem;
+  letter-spacing: 0.06rem;
+  font-weight: 600;
+  font-family: "Montserrat";
+  line-height: 1.8rem;
+}
+
+header {
+  text-align: center;
+  background-color: #E5E5E5;
+  position: relative;
+}
+header nav {
+  background-color: #345765;
+}
+header nav div {
+  max-width: 1400px;
+  height: 100px;
+}
+header nav div ul {
+  text-align: right;
+}
+header nav div ul li {
+  list-style: none;
+  display: inline-block;
+}
+header nav div ul li a:first-of-type {
+  font-family: "Montserrat";
+}
+header nav div ul li a {
+  color: #FFFFFF;
+  display: block;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 0.8rem;
+  margin: 2.1rem 0 2.1rem 2rem;
+  text-align: center;
+  font-family: "Lato";
+}
+header h1 {
+  margin: 5.6rem auto 2.8rem;
+  text-transform: uppercase;
+  color: #34A58A;
+  text-align: start;
+  font-size: 2rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+  max-width: 1400px;
+}
+header img {
+  max-width: 1400px;
+  width: 100%;
+  max-height: 565px;
+  border-radius: 10px;
+  text-align: center;
+  object-fit: cover;
+}
+
+main {
+  background-color: #E5E5E5;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+main .premierediv {
+  max-width: 1400px;
+  display: flex;
+  padding-top: 5.6rem;
+  margin-bottom: 7.784rem;
+}
+main .premierediv div {
+  flex-direction: column;
+  font-family: Lato;
+}
+main .premierediv div .presentation {
+  margin: 0;
+}
+main .premierediv div .presentation h2 {
+  padding-top: 0;
+  height: 83px;
+  max-width: 452px;
+  margin: 0;
+}
+main .premierediv div .presentation div {
+  max-width: 758px;
+  margin: 0;
+  padding: 0;
+}
+main .premierediv div .presentation div p:first-of-type {
+  padding-bottom: 1rem;
+}
+main .premierediv div .presentation div p {
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.25rem;
+}
+main .premierediv div .Scoordonnees {
+  margin: 0;
+  margin-top: 3.3rem;
+}
+main .premierediv div .Scoordonnees h2 {
+  padding: 0;
+  height: 39px;
+  max-width: 284px;
+  margin-bottom: 1.05rem;
+}
+main .premierediv div .Scoordonnees .coordonnees {
+  margin: 0;
+}
+main .premierediv div .Scoordonnees .codePostal {
+  padding-bottom: 1.45rem;
+  padding-left: 1.15rem;
+}
+main .premierediv div .Scoordonnees p:last-of-type {
+  padding-top: 1.05rem;
+}
+main .premierediv div .Scoordonnees p {
+  color: #34A58A;
+  letter-spacing: 0.06rem;
+}
+main .premierediv div .Scoordonnees p a {
+  color: #34A58A;
+}
+main .premierediv div .Scoordonnees p span {
+  color: #34A58A;
+}
+main .premierediv section h2 {
+  height: 83px;
+  max-width: 509px;
+  margin: 0;
+  padding: 0;
+}
+main .premierediv section iframe {
+  max-width: 547px;
+  border-radius: 10px;
+  border: #FFFFFF 0.2rem solid;
+}
+main .dernieresection {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+main .dernieresection .div1ds {
+  padding: 1.7rem 1.6rem 1.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .dernieresection .div1ds h2 {
+  margin: 0;
+  text-align: center;
+}
+main .dernieresection .div1ds #droite1 {
+  margin: 0;
+  text-align: center;
+}
+main .dernieresection .div1ds #droite1 a {
+  background-color: #34A58A;
+  color: #FFFFFF;
+  padding: 0.8rem 1.6rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  display: block;
+  max-width: 181px;
+  max-height: 56px;
+}
+main .dernieresection .articles-container div {
+  display: flex;
+  padding-left: 1.6rem;
+  padding-bottom: 3.2rem;
+}
+main .dernieresection .articles-container div div {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+main .dernieresection .articles-container div div img {
+  height: 300px;
+}
+main .dernieresection .articles-container div div div {
+  flex-direction: column;
+  max-width: 393px;
+  padding-left: 0.613rem;
+  padding-right: 2.0335rem;
+}
+main .dernieresection .articles-container div div div h3 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #000000;
+  letter-spacing: 0.06rem;
+}
+main .dernieresection .articles-container div div div .date {
+  font-family: "Lato";
+  font-weight: 500;
+  margin: 0;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  color: #345765;
+  letter-spacing: 0.06rem;
+  padding-bottom: 1.35rem;
+}
+main .dernieresection .articles-container div div div p {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.04rem;
+}
+main .dernieresection .articles-container div div div .ptexte {
+  padding-top: 3px;
+}
+main .dernieresection .articles-container div div div .ensavoir {
+  margin: 0;
+  align-items: center;
+  align-content: center;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.2rem;
+  align-self: flex-end;
+  padding: 1.5rem 0 8px;
+  text-align: center;
+  letter-spacing: 0.06rem;
+  display: flex;
+}
+main .dernieresection .articles-container div div div .ensavoir a {
+  color: #34A58A;
+  display: block;
+}
+main .dernieresection .articles-container div div div .ensavoir .plus {
+  margin-left: 0.809rem;
+  font-size: 1.2rem;
+}
+main .dernieresection .articles-container div div div .ensavoir .plus:hover {
+  border: 1px solid #E5E5E5;
+}
+main .dernieresection .articles-container div div div .ensavoir #plus {
+  border-radius: 100%;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+}
+main .dernieresection .articles-container .div2 {
+  padding-bottom: 3.4rem;
+}
+main .dernieresection .articles-container .divtexte {
+  margin: 0;
+}
+
+footer {
+  margin: 0 auto;
+  background-color: #34A58A;
+  color: #FFFFFF;
+}
+footer .f1 {
+  display: flex;
+  max-width: 1921px;
+  margin: 0 auto;
+}
+footer .f1 div {
+  padding: 1rem 0;
+}
+footer .f1 div h4 {
+  text-decoration: underline;
+  padding-top: 1rem;
+  letter-spacing: 0.06rem;
+  font-size: 1.1rem;
+}
+footer .f1 div p {
+  font-size: 1rem;
+  letter-spacing: 0.06rem;
+  padding: 0.5rem 0;
+}
+footer .f1 div p a {
+  color: #FFFFFF;
+}
+footer .f1 .fd1 {
+  max-width: 960px;
+  max-height: 466px;
+  margin: 0 auto;
+  align-self: center;
+}
+footer .f1 .fd1 h4 {
+  margin: 0;
+  padding: 0;
+}
+footer .f1 .fd2 {
+  display: flex;
+  max-width: 960px;
+  max-height: 466px;
+  align-content: space-between;
+  padding: 0;
+  padding-left: 1.575rem;
+  justify-content: space-between;
+}
+footer .f1 .fd2 div:first-of-type {
+  margin: 0 auto;
+  align-self: center;
+}
+footer .f1 .fd2 div:last-of-type {
+  margin: 0 auto;
+  align-self: center;
+}
+footer .f1 .fd2 div:last-of-type .image {
+  display: block;
+  max-width: 115px;
+}
+footer .para {
+  border-top: #FFFFFF solid 1px;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-size: 1rem;
+}
+footer .para a {
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1500px) {
+  header {
+    overflow: hidden;
+  }
+  header nav div {
+    padding: 0 1rem;
+  }
+  header h1 {
+    margin: 0;
+    padding: 1rem 1rem;
+  }
+  header img {
+    width: 97%;
+    padding: 0 1rem;
+  }
+  main {
+    padding: 0 1rem 1rem;
+  }
+  main .dernieresection .articles-container div {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  main .dernieresection .articles-container div div {
+    flex-direction: row;
+    padding-bottom: 1rem;
+  }
+  main .dernieresection .articles-container div div img {
+    margin: 0;
+    width: 337px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  header img {
+    width: 95%;
+  }
+  main {
+    padding: 1rem 1rem;
+  }
+  main .premierediv {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  main .premierediv div {
+    margin: 0;
+  }
+  main .premierediv div .presentation {
+    margin: 0;
+  }
+  main .premierediv div .presentation h2 {
+    margin: 0;
+    height: auto;
+    padding-bottom: 0.5rem;
+  }
+  main .premierediv div .presentation div {
+    margin: 0;
+  }
+  main .premierediv div .Scoordonnees {
+    margin: 0;
+    padding: 1rem 0;
+  }
+  main .premierediv div .Scoordonnees h2 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+  }
+  main .premierediv div .Scoordonnees .coordonnees, main .premierediv div .Scoordonnees .mail {
+    margin: 0;
+    padding-bottom: 0.5rem;
+  }
+  main .premierediv div .Scoordonnees .tel {
+    padding: 0;
+  }
+  main .premierediv .carte {
+    margin: 0;
+    padding: 1rem 0;
+  }
+  main .dernieresection .articles-container div {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  main .dernieresection .articles-container div div {
+    flex-direction: row;
+    padding-bottom: 1rem;
+  }
+  main .dernieresection .articles-container div div img {
+    margin: 0;
+    width: 337px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  * {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 800px) {
+  header nav div {
+    height: 50%;
+    padding: 1rem 0;
+  }
+  header nav div ul {
+    border-top: solid 2px #FFFFFF;
+    border-bottom: solid 2px #FFFFFF;
+    height: 20px;
+    width: 20px;
+    margin: auto;
+  }
+  header nav div ul li {
+    display: none;
+  }
+  main .premierediv section iframe {
+    width: 100%;
+  }
+  main .dernieresection .articles-container div {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  main .dernieresection .articles-container div div {
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+  main .dernieresection .articles-container div div img {
+    margin: 0;
+    width: 337px;
+    height: 300px;
+  }
+  footer .f1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .f1 .fd2 {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  footer .f1 .fd2 div:last-of-type {
+    display: flex;
+  }
+  footer .f1 .fd2 div:last-of-type img {
+    display: inline-block;
+  }
+  footer .para {
+    padding-top: 1rem;
+  }
+}
+
+/*# sourceMappingURL=billard.css.map */
