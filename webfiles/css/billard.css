@@ -295,6 +295,9 @@ footer .f1 div p {
 footer .f1 div p a {
   color: #FFFFFF;
 }
+footer .f1 div .codePostal {
+  padding-left: 1.4rem;
+}
 footer .f1 .fd1 {
   max-width: 960px;
   max-height: 466px;
