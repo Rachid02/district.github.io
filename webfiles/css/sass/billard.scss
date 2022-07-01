@@ -7,16 +7,43 @@ $black: #000000;
 
 @font-face{
     font-family: "Montserrat";
-    src: url("/webfiles/font/Montserrat-Regular.woff") format("woff2"),
-           url("/webfiles/font/Montserrat-Regular.woff") format("woff");
+    src: url("/src/fonts/Montserrat-Regular.woff") format("woff2"),
+           url("/src/fonts/Montserrat-Regular.woff") format("woff");
    }
 
 @font-face{
     font-family: "Lato";
-    src: url("/webfiles/font/Lato-Regular.woff") format("woff2"),
-           url("/webfiles/font/Lato-Regular.woff") format("woff");
+    src: url("/src/fonts/Lato-Regular.woff") format("woff2"),
+           url("/src/fonts/Lato-Regular.woff") format("woff");
    }
 
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../../../src/fonts/font/fonts/icomoon.eot?2hyq27');
+    src:  url('../../../src/fonts/font/fonts/icomoon.eot?2hyq27#iefix') format('embedded-opentype'),
+      url('../../../src/fonts/font/fonts/icomoon.ttf?2hyq27') format('truetype'),
+      url('../../../src/fonts/font/fonts/icomoon.woff?2hyq27') format('woff'),
+      url('../../../src/fonts/font/fonts/icomoon.svg?2hyq27#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
 *{
     margin: 0 auto;
     font-family: "Lato";
@@ -26,12 +53,12 @@ $black: #000000;
     h2{
         color: $marron;
         font-size: 1.8rem;
-        letter-spacing: 0.06rem;
-        
+        letter-spacing: 0.06rem;      
         font-weight: 600;
         font-family: "Montserrat";
-        line-height: 1.8rem;
     }
+
+    
 }
 
 header{
@@ -49,10 +76,9 @@ header{
             ul{
                 text-align: right;
                 
-
                 li{
                     list-style: none;
-                    display: inline-block;
+                    display: inline-block;                   
 
                     a:first-of-type{
                         font-family: "Montserrat";
@@ -67,7 +93,13 @@ header{
                         line-height: 0.8rem;
                         margin: 2.1rem 0 2.1rem 2rem;
                         text-align: center;
-                        font-family: "Lato";
+                        font-family: "Lato";   
+                        height: 100px;                   
+                        
+                        &:hover{
+                            text-decoration: underline;
+                            text-underline-offset: 0.5rem;  
+                        }                                               
                     }
                 }
             }
@@ -117,13 +149,12 @@ main{
 
                 h2{
                     padding-top: 0;
-                    height: 83px;
+                    padding-bottom: 2.6rem;
                     max-width: 452px;
-                    margin:0;                  
+                    margin:0;                                     
                 }
                 
                 div{
-                    
                     max-width: 758px;
                     margin: 0;
                     padding: 0;
@@ -144,22 +175,29 @@ main{
 
             .Scoordonnees{
                 margin: 0;
-                margin-top: 3.3rem;
+                padding-top: 3.3rem;
 
                 h2{
                     padding: 0;
-                    height: 39px;
                     max-width: 284px;
-                    margin-bottom: 1.05rem;
+                    padding-bottom: 1.05rem;
                 }
 
                 .coordonnees{
                     margin: 0;
+
+                    .icon-localisation:before {
+                        content: "\e900";
+                        color: #34a58a;
+                    }
+                    
                 }
 
                 .codePostal{
                     padding-bottom: 1.45rem;
                     padding-left: 1.15rem;
+
+
                 }
 
                 p:last-of-type{
@@ -167,9 +205,19 @@ main{
                     
                 }
 
-                p{
+                p{                                       
                     color: $vert;
-                    letter-spacing: 0.06rem;                   
+                    letter-spacing: 0.06rem;
+                    
+                    .icon-message:before {
+                        content: "\e901";
+                        color: #34a58a;
+                    }
+
+                    .icon-telephone:before {
+                        content: "\e902";
+                        color: #34a58a;
+                    }
 
                     a{
                         color: $vert;
@@ -184,14 +232,14 @@ main{
 
         section{
             h2{
-                height: 83px;
                 max-width: 509px;
                 margin: 0;
-                padding: 0;
+                padding: 0 0 2.8rem;
             }
                        
             iframe{
-                max-width: 547px;
+                min-width: 547px;
+                width: 100%;
                 border-radius: 10px;
                 border: #FFFFFF 0.2rem solid;
             }
@@ -359,7 +407,7 @@ footer{
 
     .f1{
         display: flex;
-        max-width: 1921px;
+        max-width: 1600px;
         margin: 0 auto;            
 
         div{
@@ -368,6 +416,7 @@ footer{
 
             h4{
                 text-decoration: underline;
+                text-underline-offset: 0.3rem;
                 padding-top: 1rem;
                 letter-spacing: 0.06rem;
                 font-size: 1.1rem;                
@@ -389,27 +438,40 @@ footer{
         }
 
         .fd1{
-            max-width: 960px;
+            
+            .icon-telephone:before {
+                content: "\e902";
+                color: #FFFFFF;
+            }
+
+            .icon-message:before {
+                content: "\e901";
+                color: #FFFFFF;
+            }
+
+            .icon-lieu:before {
+                content: "\e904";
+                color: #FFFFFF;
+            }
+
             max-height: 466px;
             margin: 0 auto;
             align-self: center;
 
             h4{
                 margin: 0;
-                padding: 0;
+                padding-top: 1rem;
             }
             
             
         }
 
         .fd2{
-            display: flex;
-            max-width: 960px;
+            display: flex;           
             max-height: 466px;
             align-content: space-between;
             padding: 0;
-            padding-left: 1.575rem;
-            justify-content: space-between;
+            
             
             
 
@@ -421,11 +483,15 @@ footer{
             div:last-of-type{
                 margin: 0 auto;
                 align-self: center;
-
-                .image{
-                display: block;
-                max-width: 115px;
-                }    
+                
+                div{   
+                    flex-direction: column;
+                
+                    .image{
+                    justify-content: space-between;    
+                    max-width: 115px;
+                    } 
+                }                                 
             }
         }       
     }
@@ -439,6 +505,11 @@ footer{
         a{
             color: $white;
             display: inline-block;
+
+            &:hover{
+                text-decoration: underline;
+                text-underline-offset: 0.3rem;  
+            }   
         }
     }
 }
@@ -512,7 +583,8 @@ footer{
                     h2{
                         margin: 0;
                         height: auto;
-                        padding-bottom: 0.5rem;
+                        padding-bottom: 1rem;
+                        padding-top: 4rem;
                     }
 
                     div{
@@ -527,6 +599,7 @@ footer{
                     h2{
                         margin: 0;
                         padding-bottom: 0.5rem;
+                        padding-top: 4rem;
                     }
 
                     .coordonnees, .mail{
@@ -544,6 +617,16 @@ footer{
             .carte{
                 margin: 0;
                 padding: 1rem 0;
+
+                h2{
+                    padding-bottom: 1rem;
+                    padding-top: 3rem;
+                    margin: 0;
+                }
+
+                iframe{
+                    max-width: 100%;
+                }
             }
         }
 
@@ -561,6 +644,10 @@ footer{
                         img{
                             margin: 0;
                             width: 337px;
+                        }
+
+                        div{
+                            max-width: 100%;
                         }
                     }
                 }
@@ -596,10 +683,12 @@ footer{
     }
 
     main{
+        overflow: hidden;
+
         .premierediv{
             section{
                 iframe{
-                    width: 100%;
+                min-width: 100%;
                 }
             }
         }
