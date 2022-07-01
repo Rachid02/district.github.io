@@ -377,6 +377,7 @@ footer .f1 .fd2 div:last-of-type div {
 footer .f1 .fd2 div:last-of-type div .image {
   justify-content: space-between;
   max-width: 115px;
+  background-color: red;
 }
 footer .para {
   border-top: #FFFFFF solid 1px;
