@@ -1,15 +1,36 @@
 @font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url("/webfiles/font/Montserrat-Regular.woff") format("woff2"), url("/webfiles/font/Montserrat-Regular.woff") format("woff");
+  font-family: "Montserrat";
+  src: url("/src/fonts/Montserrat-Regular.woff") format("woff2"), url("/src/fonts/Montserrat-Regular.woff") format("woff");
 }
 @font-face {
-  font-family: "Lato", sans-serif;
-  src: url("/webfiles/font/Lato-Regular.woff") format("woff2"), url("/webfiles/font/Lato-Regular.woff") format("woff");
+  font-family: "Lato";
+  src: url("/src/fonts/Lato-Regular.woff") format("woff2"), url("/src/fonts/Lato-Regular.woff") format("woff");
 }
+@font-face {
+  font-family: "icomoon";
+  src: url("../../../src/fonts/font/fonts/icomoon.eot?2hyq27");
+  src: url("../../../src/fonts/font/fonts/icomoon.eot?2hyq27#iefix") format("embedded-opentype"), url("../../../src/fonts/font/fonts/icomoon.ttf?2hyq27") format("truetype"), url("../../../src/fonts/font/fonts/icomoon.woff?2hyq27") format("woff"), url("../../../src/fonts/font/fonts/icomoon.svg?2hyq27#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 * {
   margin: 0 auto;
-  font-family: sans-serif;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
   font-size: 20px;
   text-decoration-line: none;
 }
@@ -17,9 +38,8 @@
   color: #6B5B54;
   font-size: 1.8rem;
   letter-spacing: 0.06rem;
-  font-weight: 600;
+  font-weight: 700;
   font-family: "Montserrat";
-  line-height: 1.8rem;
 }
 
 header {
@@ -42,7 +62,7 @@ header nav div ul li {
   display: inline-block;
 }
 header nav div ul li a:first-of-type {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
 }
 header nav div ul li a {
   color: #FFFFFF;
@@ -53,7 +73,12 @@ header nav div ul li a {
   line-height: 0.8rem;
   margin: 2.1rem 0 2.1rem 2rem;
   text-align: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
+  height: 100px;
+}
+header nav div ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
 }
 header h1 {
   margin: 5.6rem auto 2.8rem;
@@ -61,7 +86,7 @@ header h1 {
   color: #34A58A;
   text-align: start;
   font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-weight: 700;
   max-width: 1400px;
 }
@@ -83,18 +108,19 @@ main .premierediv {
   max-width: 1400px;
   display: flex;
   padding-top: 5.6rem;
-  margin-bottom: 7.784rem;
+  padding-bottom: 7.8rem;
 }
 main .premierediv div {
   flex-direction: column;
   font-family: Lato;
+  margin: 0;
 }
 main .premierediv div .presentation {
   margin: 0;
 }
 main .premierediv div .presentation h2 {
   padding-top: 0;
-  height: 83px;
+  padding-bottom: 2.6rem;
   max-width: 452px;
   margin: 0;
 }
@@ -115,16 +141,19 @@ main .premierediv div .presentation div p {
 }
 main .premierediv div .Scoordonnees {
   margin: 0;
-  margin-top: 3.3rem;
+  padding-top: 3.3rem;
 }
 main .premierediv div .Scoordonnees h2 {
   padding: 0;
-  height: 39px;
   max-width: 284px;
-  margin-bottom: 1.05rem;
+  padding-bottom: 1.05rem;
 }
 main .premierediv div .Scoordonnees .coordonnees {
   margin: 0;
+}
+main .premierediv div .Scoordonnees .coordonnees .icon-localisation:before {
+  content: "\e900";
+  color: #34a58a;
 }
 main .premierediv div .Scoordonnees .codePostal {
   padding-bottom: 1.45rem;
@@ -137,20 +166,33 @@ main .premierediv div .Scoordonnees p {
   color: #34A58A;
   letter-spacing: 0.06rem;
 }
+main .premierediv div .Scoordonnees p .icon-message:before {
+  content: "\e901";
+  color: #34a58a;
+}
+main .premierediv div .Scoordonnees p .icon-telephone:before {
+  content: "\e902";
+  color: #34a58a;
+}
 main .premierediv div .Scoordonnees p a {
   color: #34A58A;
 }
 main .premierediv div .Scoordonnees p span {
   color: #34A58A;
 }
+main .premierediv section {
+  margin: 0 0 0 auto;
+  padding-right: 0.5rem;
+  padding-left: 0.2rem;
+}
 main .premierediv section h2 {
-  height: 83px;
   max-width: 509px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 2.8rem;
 }
-main .premierediv section iframe {
-  max-width: 547px;
+main .premierediv section span iframe {
+  min-width: 547px;
+  width: 100%;
   border-radius: 10px;
   border: #FFFFFF 0.2rem solid;
 }
@@ -204,7 +246,7 @@ main .dernieresection .articles-container div div div {
   padding-right: 2.0335rem;
 }
 main .dernieresection .articles-container div div div h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -212,7 +254,7 @@ main .dernieresection .articles-container div div div h3 {
   letter-spacing: 0.06rem;
 }
 main .dernieresection .articles-container div div div .date {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
   font-weight: 500;
   margin: 0;
   font-size: 0.7rem;
@@ -222,7 +264,7 @@ main .dernieresection .articles-container div div div .date {
   padding-bottom: 1.35rem;
 }
 main .dernieresection .articles-container div div div p {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
   font-weight: 400;
   font-size: 0.9rem;
   line-height: 1.1rem;
@@ -236,7 +278,7 @@ main .dernieresection .articles-container div div div .ensavoir {
   align-items: center;
   align-content: center;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-size: 1.2rem;
   font-weight: 500;
   font-style: normal;
@@ -276,7 +318,9 @@ footer {
 }
 footer .f1 {
   display: flex;
-  max-width: 1921px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  max-width: 1600px;
   margin: 0 auto;
 }
 footer .f1 div {
@@ -284,6 +328,7 @@ footer .f1 div {
 }
 footer .f1 div h4 {
   text-decoration: underline;
+  text-underline-offset: 0.3rem;
   padding-top: 1rem;
   letter-spacing: 0.06rem;
   font-size: 1.1rem;
@@ -296,36 +341,61 @@ footer .f1 div p {
 footer .f1 div p a {
   color: #FFFFFF;
 }
+footer .f1 div .codePostal {
+  padding-left: 1.4rem;
+}
 footer .f1 .fd1 {
-  max-width: 960px;
+  margin: 0 auto;
+  min-width: 500px;
+  display: flex;
+  align-self: center;
   max-height: 466px;
   margin: 0 auto;
   align-self: center;
+}
+footer .f1 .fd1 .icon-telephone:before {
+  content: "\e902";
+  color: #FFFFFF;
+}
+footer .f1 .fd1 .icon-message:before {
+  content: "\e901";
+  color: #FFFFFF;
+}
+footer .f1 .fd1 .icon-lieu:before {
+  content: "\e904";
+  color: #FFFFFF;
 }
 footer .f1 .fd1 h4 {
   margin: 0;
-  padding: 0;
+  padding-top: 1rem;
 }
 footer .f1 .fd2 {
+  min-width: 500px;
   display: flex;
-  max-width: 960px;
   max-height: 466px;
-  align-content: space-between;
   padding: 0;
-  padding-left: 1.575rem;
+  align-self: center;
+}
+footer .f1 .fd2 div {
+  margin: 0 auto;
+  align-self: center;
+}
+footer .f1 .fd3 {
+  min-width: 500px;
+  margin: 0 auto;
+  align-self: center;
+}
+footer .f1 .fd3 div {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-content: space-between;
 }
-footer .f1 .fd2 div:first-of-type {
-  margin: 0 auto;
-  align-self: center;
-}
-footer .f1 .fd2 div:last-of-type {
-  margin: 0 auto;
-  align-self: center;
-}
-footer .f1 .fd2 div:last-of-type .image {
-  display: block;
+footer .f1 .fd3 div .image {
   max-width: 115px;
+}
+footer .f1 .fd3 div img:first-of-type {
+  padding-bottom: 1rem;
 }
 footer .para {
   border-top: #FFFFFF solid 1px;
@@ -336,6 +406,10 @@ footer .para {
 footer .para a {
   color: #FFFFFF;
   display: inline-block;
+}
+footer .para a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
 }
 
 @media screen and (max-width: 1500px) {
@@ -390,7 +464,8 @@ footer .para a {
   main .premierediv div .presentation h2 {
     margin: 0;
     height: auto;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    padding-top: 4rem;
   }
   main .premierediv div .presentation div {
     margin: 0;
@@ -402,6 +477,7 @@ footer .para a {
   main .premierediv div .Scoordonnees h2 {
     margin: 0;
     padding-bottom: 0.5rem;
+    padding-top: 4rem;
   }
   main .premierediv div .Scoordonnees .coordonnees, main .premierediv div .Scoordonnees .mail {
     margin: 0;
@@ -414,6 +490,14 @@ footer .para a {
     margin: 0;
     padding: 1rem 0;
   }
+  main .premierediv .carte h2 {
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+    margin: 0;
+  }
+  main .premierediv .carte iframe {
+    max-width: 100%;
+  }
   main .dernieresection .articles-container div {
     flex-direction: column;
     padding: 0 1rem;
@@ -425,6 +509,9 @@ footer .para a {
   main .dernieresection .articles-container div div img {
     margin: 0;
     width: 337px;
+  }
+  main .dernieresection .articles-container div div div {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -447,8 +534,11 @@ footer .para a {
   header nav div ul li {
     display: none;
   }
+  main {
+    overflow: hidden;
+  }
   main .premierediv section iframe {
-    width: 100%;
+    min-width: 100%;
   }
   main .dernieresection .articles-container div {
     flex-direction: column;
@@ -472,10 +562,10 @@ footer .para a {
     margin: 0;
     padding: 0;
   }
-  footer .f1 .fd2 div:last-of-type {
+  footer .f1 .fd3 {
     display: flex;
   }
-  footer .f1 .fd2 div:last-of-type img {
+  footer .f1 .fd3 img {
     display: inline-block;
   }
   footer .para {
