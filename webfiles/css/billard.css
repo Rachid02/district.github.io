@@ -62,7 +62,7 @@ header nav div ul li {
   display: inline-block;
 }
 header nav div ul li a:first-of-type {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 header nav div ul li a {
   color: #FFFFFF;
